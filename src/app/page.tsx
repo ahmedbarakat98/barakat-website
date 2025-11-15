@@ -10,6 +10,7 @@ import frontend from "./../../public/frontend.png";
 import marketing from "./../../public/digital marketing.png";
 import dataanalyst from "./../../public/data analyst.png";
 import ecommerce from "./../../public/ecommerce.png";
+import dashboard from "./../../public/dashboard.png";
 import python from "./../../public/python.png";
 import { CometCard } from "@/components/comet-card";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
@@ -355,7 +356,7 @@ function App() {
             Portfolio
           </h1>
           {/* projects Cards  */}
-          <div className="flex flex-col lg:flex-row justify-between items-center px-15 mb-10">
+          <div className="flex gap-10 flex-col lg:flex-row justify-between items-center px-15 mb-10">
             <ElectricBorder
               color="#39fc03"
               speed={1}
@@ -374,7 +375,7 @@ function App() {
                     alt="Project 1"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                    className="rounded-lg mb-3 w-80 h-40 object-fill"
                   />
 
                   <h2 className="flex items-center pb-3 gap-2 font-bold text-[20px]">
@@ -410,6 +411,58 @@ function App() {
                     experience.
                   </p>
                   <p className="text-yellow-300 text-[14px]">on progress</p>
+                </div>
+              </Link>
+            </ElectricBorder>
+
+            <ElectricBorder
+              color="#39fc03"
+              speed={1}
+              chaos={0.5}
+              thickness={2}
+              style={{ borderRadius: 16 }}
+            >
+              <Link
+                href="https://github.com/ahmedbarakat98/E-Commerce/blob/main/public/dashboard.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="p-5 w-80 h-fit m-5">
+                  <Image
+                    src={dashboard}
+                    alt="Project 1"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3 w-80 h-40 object-fill"
+                  />
+
+                  <h2 className="flex items-center pb-3 gap-2 font-bold text-[20px]">
+                    Cash Collection Dashboard
+                  </h2>
+
+                  <div className="flex gap-2 pb-2">
+                    <Badge
+                      variant="secondary"
+                      className="bg-green-500 text-white dark:bg-green-600"
+                    >
+                      Microsoft Excel
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="bg-yellow-500 text-white dark:bg-yellow-600"
+                    >
+                      Power BI
+                    </Badge>
+                  </div>
+                  <p className="text-[10px]">
+                    This dashboard provides a concise view of cash collection
+                     performance. The top section presents key KPIs such as market
+                     count, fleet size, and order volumes for Mega and Mega+ 
+                     retailers. The bar chart shows how orders are distributed
+                      across different markets, while the map highlights retailer
+                       locations to visualize geographic activity and concentration.
+                  </p>
+                  <p className="text-green-300 text-[14px]">Finished</p>
                 </div>
               </Link>
             </ElectricBorder>
