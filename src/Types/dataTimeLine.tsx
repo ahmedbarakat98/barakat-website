@@ -110,7 +110,7 @@ export const dataTimeLine = [
     ),
   },
   {
-    title: "Late 2024",
+    title: "2025",
     content: (
       <div className="text-neutral-700 dark:text-neutral-300">
         <span>Back To</span>
@@ -118,7 +118,7 @@ export const dataTimeLine = [
          MAXAB Logistics - Distribution Sorting Center Team Leader
         </h4>
         <p className="mb-4 font-bold">
-         Maadi | Jan 2024 – Present (Full Time - Remote)
+         Maadi | Jan 2024 – Jan 2026 (Full Time - Remote)
         </p>
         <p className="mb-4">
           I Develop and optimize a digital mapping system to automate product sorting 
@@ -127,6 +127,33 @@ export const dataTimeLine = [
             metrics and identify process enhancements. Designed and implemented area 
             segmentation strategies based on order density, improving delivery accuracy, 
             operational efficiency, and overall logistics coordination.
+        </p>
+        <a href="https://www.maxab.io/">
+        <Image width={100} height={100} className="w-1/4 rounded-3xl overflow-hidden" src={Maxab} alt={"Maxab"}></Image>
+        </a>
+        
+      </div>
+    ),
+  },
+  {
+    title: "2026",
+    content: (
+      <div className="text-neutral-700 dark:text-neutral-300">
+        <h4 className="mb-1 text-2xl font-bold">
+         Foodica Trading and Distribution Ltd. Co. - IT Frontend Developer and Network Administrator
+        </h4>
+        <p className="mb-4 font-bold">
+         Abo Rawash | May 2026 – Present (Full Time - on-site)
+        </p>
+        <p className="mb-4">
+          I Manage and maintain the company's IT infrastructure, ensuring high availability, stability, and security of systems and networks.
+          Provide advanced technical support (Level 2/3) to end users, troubleshooting hardware, software, and network issues efficiently.
+          Manage user permissions and access rights on Odoo ERP system, including creating new users, assigning security groups, role-based access control, and conducting periodic permission reviews.
+          Configure and customize Odoo modules according to departmental requirements (Sales, Purchasing, Accounting, Inventory, HR, etc.).
+          Implement and enforce cybersecurity policies, data access controls, and best practices for system security.
+          Administer Active Directory, Group Policies, email accounts, and user provisioning.
+          Participate in digital transformation projects and internal process automation using ERP systems.
+          Train and support users on Odoo and other internal tools to maximize productivity and system adoption.
         </p>
         <a href="https://www.maxab.io/">
         <Image width={100} height={100} className="w-1/4 rounded-3xl overflow-hidden" src={Maxab} alt={"Maxab"}></Image>

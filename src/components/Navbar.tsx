@@ -70,7 +70,10 @@ export default function Navbar() {
   return (
     <>
       <div className="fixed left-0 z-10 right-0 h-fit pt-5 px-5 flex justify-end items-end md:justify-center md:items-center">
-        <FloatingDock items={links} />
+        <FloatingDock
+          items={links}
+          mobileClassName="top-5 right-5"
+        />
       </div>
     </>
   );
