@@ -1,4 +1,3 @@
-import TrueFocus from "@/components/TrueFocus";
 import LogoLoop from "@/components/LogoLoop";
 import Navbar from "@/components/Navbar";
 import Barakat from "../../public/barakat.jpg";
@@ -11,9 +10,9 @@ import marketing from "./../../public/digital marketing.png";
 import dataanalyst from "./../../public/data analyst.png";
 import python from "./../../public/python.png";
 import { CometCard } from "@/components/comet-card";
+import SplitFlapText from '@/components//SplitFlapText';
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import { Button } from "@/components/moving-border";
-import ThemeToggle from "@/components/ThemeToggle";
 import { CardStack } from "@/components/card-stack";
 import ElectricBorder from "@/components/ElectricBorder";
 import Link from "next/link";
@@ -26,18 +25,23 @@ function App() {
       <Navbar />
       <div className="w-full h-fit md:h-screen bg-white dark:bg-black relative flex justify-center items-center">
         <div className="absolute top-6 md:top-8 left-5  md:left-10 text-white">
-          <TrueFocus
-            sentence="Ahmed Barakat"
-            manualMode={false}
-            blurAmount={5}
-            borderColor="#39fc03"
-            animationDuration={2}
-            pauseBetweenAnimations={1}
-            glowColor="rgba(57, 252, 3, 0.6)"
-          />
+          <SplitFlapText
+            words={[".Net Developer", "Frontend Developer", "IT Specialist", "GIS Developer"]}
+            flipDuration={0.13}
+            stagger={0.06}
+            cycleDelay={2400}
+            charset="ABCDEF0123456789•abcdefghijklmnobqrstuvwxyz"
+            flipsPerChar={8}
+            tileColor="#000000"
+            textColor="#39fc03"
+            tileRadius={8}
+            gap={1}
+            fontSize={25}
+            loop
+            padTo={12} text={undefined}          />
         </div>
         <div className="absolute top-5 md:top-8 right-[50%] translate-x-[50%] text-white md:right-15 ">
-          <ThemeToggle />
+        
         </div>
 
         {/* Hero  */}
@@ -71,22 +75,6 @@ function App() {
                     Download CV
                   </Link>
                 </Button>
-
-                {/* <Button
-                  borderRadius="1.75rem"
-                  borderClassName=" bg-[#39fc03]"
-                  containerClassName="container-class mt-10 ml-4 "
-                  duration={4000}
-                  className="dark:text-white cursor-pointer text-black font-semibold hover:scale-[1.03] transition-transform"
-                >
-                  <Link
-                    href="#projects"
-                    className="dark:text-white text-black font-light px-4"
-                  >
-                    Portfolio
-                  </Link>
-                </Button> */}
-                
               </div>
               <div className="flex justify-start items-start">
                 {/* GitHub */}
@@ -348,7 +336,7 @@ function App() {
       {/* Projects  */}
       <div
         id="projects"
-        className="relative w-full overflow-hidden bg-white px-4 py-20 text-black dark:bg-black dark:text-white sm:px-6 lg:px-8"
+        className="relative w-full overflow-hidden bg-white px-4 text-black dark:bg-black dark:text-white sm:px-6 lg:px-8"
       >
         <div className="mx-auto max-w-7xl">
           {/* Section Header */}
