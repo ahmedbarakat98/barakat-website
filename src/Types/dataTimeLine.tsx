@@ -1,6 +1,7 @@
 import MapEmbed from "@/components/Location1";
 import edge from "../../public/12345.png";
 import Maxab from "../../public/mxb.jpg";
+import foodiac from "../../public/logo white.png";
 import etqan from "../../public/Etqan.png";
 import Image from "next/image";
 import { Link } from "lucide-react";
@@ -156,7 +157,7 @@ export const dataTimeLine = [
           Train and support users on Odoo and other internal tools to maximize productivity and system adoption.
         </p>
         <a href="https://www.maxab.io/">
-        <Image width={100} height={100} className="w-1/4 rounded-3xl overflow-hidden" src={Maxab} alt={"Maxab"}></Image>
+        <Image width={100} height={100} className="w-1/4 rounded-3xl overflow-hidden" src={foodiac} alt={"Maxab"}></Image>
         </a>
         
       </div>

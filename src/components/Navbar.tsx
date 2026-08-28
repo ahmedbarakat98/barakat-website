@@ -18,7 +18,6 @@ export default function Navbar() {
       ),
       href: "/#",
     },
-
     {
       title: "About",
       icon: (
@@ -26,15 +25,13 @@ export default function Navbar() {
       ),
       href: "/#about",
     },
-
     {
-      title: "Projects",
+      title: "Experience",
       icon: (
         <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#timeline",
     },
-
     {
       title: "Skills",
       icon: (
@@ -42,7 +39,6 @@ export default function Navbar() {
       ),
       href: "#skills",
     },
-
     {
       title: "Achievements",
       icon: (
@@ -50,7 +46,6 @@ export default function Navbar() {
       ),
       href: "#certificates",
     },
-
     {
       title: "Projects",
       icon: (
@@ -58,7 +53,6 @@ export default function Navbar() {
       ),
       href: "#projects",
     },
-
     {
       title: "Contact",
       icon: (
@@ -67,14 +61,13 @@ export default function Navbar() {
       href: "#call",
     },
   ];
+
   return (
-    <>
-      <div className="fixed left-0 z-10 right-0 h-fit pt-5 px-5 flex justify-end items-end md:justify-center md:items-center">
-        <FloatingDock
-          items={links}
-          mobileClassName="top-5 right-5"
-        />
-      </div>
-    </>
+    <div className="fixed left-0 right-0 z-10 flex h-fit items-end justify-end px-5 pt-5 md:items-center md:justify-center">
+      <FloatingDock
+        items={links}
+        mobileClassName="top-5 right-5"
+      />
+    </div>
   );
 }

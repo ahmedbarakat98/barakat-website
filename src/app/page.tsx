@@ -9,8 +9,6 @@ import Image from "next/image";
 import frontend from "./../../public/frontend.png";
 import marketing from "./../../public/digital marketing.png";
 import dataanalyst from "./../../public/data analyst.png";
-import ecommerce from "./../../public/ecommerce.png";
-import dashboard from "./../../public/dashboard.png";
 import python from "./../../public/python.png";
 import { CometCard } from "@/components/comet-card";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
@@ -19,7 +17,8 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { CardStack } from "@/components/card-stack";
 import ElectricBorder from "@/components/ElectricBorder";
 import Link from "next/link";
-import { Badge } from "@/components/badge";
+import { TestimonialSlider } from "@/components/testimonial-slider-1";
+import { reviews } from "@/components/portfoflioContent";
 
 function App() {
   return (
@@ -73,7 +72,7 @@ function App() {
                   </Link>
                 </Button>
 
-                <Button
+                {/* <Button
                   borderRadius="1.75rem"
                   borderClassName=" bg-[#39fc03]"
                   containerClassName="container-class mt-10 ml-4 "
@@ -86,7 +85,8 @@ function App() {
                   >
                     Portfolio
                   </Link>
-                </Button>
+                </Button> */}
+                
               </div>
               <div className="flex justify-start items-start">
                 {/* GitHub */}
@@ -348,273 +348,29 @@ function App() {
       {/* Projects  */}
       <div
         id="projects"
-        className="w-full bg-white px-4 py-16 text-black dark:bg-black dark:text-white sm:px-6 lg:px-8"
+        className="relative w-full overflow-hidden bg-white px-4 py-20 text-black dark:bg-black dark:text-white sm:px-6 lg:px-8"
       >
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-green-500">
+          {/* Section Header */}
+          <div className="mb-14 text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-green-500">
               My Work
             </p>
 
-            <h1 className="text-4xl font-bold md:text-5xl">Portfolio</h1>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+              Featured <span className="text-green-500">Projects</span>
+            </h2>
 
-            <p className="mx-auto mt-4 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400 md:text-base">
-              A selection of projects built with modern tools, clean UI, and
-              practical business-focused solutions.
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
+              A selection of projects built with modern technologies, clean user
+              interfaces, and practical solutions focused on real business
+              needs.
             </p>
           </div>
 
-          {/* Projects Cards */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
-            <ElectricBorder
-              color="#39fc03"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{
-                borderRadius: 20,
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Link
-                href="https://github.com/ahmedbarakat98/E-Commerce"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block h-full"
-              >
-                <div className="group flex h-full flex-col rounded-[20px] bg-neutral-50 p-4 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-neutral-950">
-                  <div className="overflow-hidden rounded-2xl">
-                    <Image
-                      src={ecommerce}
-                      alt="E-Commerce App"
-                      width={500}
-                      height={300}
-                      className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-
-                  <div className="mt-5 flex flex-1 flex-col">
-                    <h2 className="mb-3 text-xl font-bold">E-Commerce App</h2>
-
-                    <div className="mb-4 flex flex-wrap gap-2">
-                      <Badge className="bg-yellow-500 text-white hover:bg-yellow-500">
-                        Next.JS
-                      </Badge>
-                      <Badge className="bg-red-500 text-white hover:bg-red-500">
-                        Tailwind
-                      </Badge>
-                      <Badge className="bg-blue-500 text-white hover:bg-blue-500">
-                        TypeScript
-                      </Badge>
-                    </div>
-
-                    <p className="flex-1 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-                      I developed an e-commerce website during the Route Academy
-                      course, where customers can browse products, add items to
-                      their cart, and complete secure payments using modern web
-                      technologies.
-                    </p>
-
-                    <div className="mt-5 flex items-center justify-between border-t border-neutral-200 pt-4 dark:border-neutral-800">
-                      <span className="rounded-full bg-yellow-500/10 px-3 py-1 text-sm font-medium text-yellow-500">
-                        On Progress
-                      </span>
-
-                      <span className="text-sm font-medium text-green-500">
-                        View Project →
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </ElectricBorder>
-
-            <ElectricBorder
-              color="#39fc03"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{
-                borderRadius: 20,
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Link
-                href="https://github.com/ahmedbarakat98/E-Commerce/blob/main/public/dashboard.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block h-full"
-              >
-                <div className="group flex h-full flex-col rounded-[20px] bg-neutral-50 p-4 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-neutral-950">
-                  <div className="overflow-hidden rounded-2xl">
-                    <Image
-                      src={dashboard}
-                      alt="Cash Collection Dashboard"
-                      width={500}
-                      height={300}
-                      className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-
-                  <div className="mt-5 flex flex-1 flex-col">
-                    <h2 className="mb-3 text-xl font-bold">
-                      Cash Collection Dashboard
-                    </h2>
-
-                    <div className="mb-4 flex flex-wrap gap-2">
-                      <Badge className="bg-green-500 text-white hover:bg-green-500">
-                        Microsoft Excel
-                      </Badge>
-                      <Badge className="bg-yellow-500 text-white hover:bg-yellow-500">
-                        Power BI
-                      </Badge>
-                    </div>
-
-                    <p className="flex-1 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-                      This dashboard provides a concise view of cash collection
-                      performance, including KPIs, market count, fleet size,
-                      order volumes, bar charts, and retailer locations.
-                    </p>
-
-                    <div className="mt-5 flex items-center justify-between border-t border-neutral-200 pt-4 dark:border-neutral-800">
-                      <span className="rounded-full bg-green-500/10 px-3 py-1 text-sm font-medium text-green-500">
-                        Finished
-                      </span>
-
-                      <span className="text-sm font-medium text-green-500">
-                        View Project →
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </ElectricBorder>
-
-            <ElectricBorder
-              color="#39fc03"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{
-                borderRadius: 20,
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Link
-                href="https://github.com/ahmedbarakat98/E-Commerce/blob/main/public/dashboard.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block h-full"
-              >
-                <div className="group flex h-full flex-col rounded-[20px] bg-neutral-50 p-4 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-neutral-950">
-                  <div className="overflow-hidden rounded-2xl">
-                    <Image
-                      src={dashboard}
-                      alt="Cash Collection Dashboard"
-                      width={500}
-                      height={300}
-                      className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-
-                  <div className="mt-5 flex flex-1 flex-col">
-                    <h2 className="mb-3 text-xl font-bold">
-                      Cash Collection Dashboard
-                    </h2>
-
-                    <div className="mb-4 flex flex-wrap gap-2">
-                      <Badge className="bg-green-500 text-white hover:bg-green-500">
-                        Microsoft Excel
-                      </Badge>
-                      <Badge className="bg-yellow-500 text-white hover:bg-yellow-500">
-                        Power BI
-                      </Badge>
-                    </div>
-
-                    <p className="flex-1 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-                      This dashboard provides a concise view of cash collection
-                      performance, including KPIs, market count, fleet size,
-                      order volumes, bar charts, and retailer locations.
-                    </p>
-
-                    <div className="mt-5 flex items-center justify-between border-t border-neutral-200 pt-4 dark:border-neutral-800">
-                      <span className="rounded-full bg-green-500/10 px-3 py-1 text-sm font-medium text-green-500">
-                        Finished
-                      </span>
-
-                      <span className="text-sm font-medium text-green-500">
-                        View Project →
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </ElectricBorder>
-
-            <ElectricBorder
-              color="#39fc03"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{
-                borderRadius: 20,
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Link
-                href="https://github.com/ahmedbarakat98/E-Commerce/blob/main/public/dashboard.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block h-full"
-              >
-                <div className="group flex h-full flex-col rounded-[20px] bg-neutral-50 p-4 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-neutral-950">
-                  <div className="overflow-hidden rounded-2xl">
-                    <Image
-                      src={dashboard}
-                      alt="Cash Collection Dashboard"
-                      width={500}
-                      height={300}
-                      className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-
-                  <div className="mt-5 flex flex-1 flex-col">
-                    <h2 className="mb-3 text-xl font-bold">
-                      Cash Collection Dashboard
-                    </h2>
-
-                    <div className="mb-4 flex flex-wrap gap-2">
-                      <Badge className="bg-green-500 text-white hover:bg-green-500">
-                        Microsoft Excel
-                      </Badge>
-                      <Badge className="bg-yellow-500 text-white hover:bg-yellow-500">
-                        Power BI
-                      </Badge>
-                    </div>
-
-                    <p className="flex-1 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-                      This dashboard provides a concise view of cash collection
-                      performance, including KPIs, market count, fleet size,
-                      order volumes, bar charts, and retailer locations.
-                    </p>
-
-                    <div className="mt-5 flex items-center justify-between border-t border-neutral-200 pt-4 dark:border-neutral-800">
-                      <span className="rounded-full bg-green-500/10 px-3 py-1 text-sm font-medium text-green-500">
-                        Finished
-                      </span>
-
-                      <span className="text-sm font-medium text-green-500">
-                        View Project →
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </ElectricBorder>
+          {/* Projects Slider */}
+          <div className="relative mx-auto max-w-6xl">
+            <TestimonialSlider reviews={reviews} />
           </div>
         </div>
       </div>

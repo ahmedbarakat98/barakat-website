@@ -17,6 +17,7 @@ import {
   SiRedux,
   SiGithub,
   SiGooglesheets,
+  SiOdoo
 } from "react-icons/si";
 
 export const techLogos = [
@@ -43,6 +44,8 @@ export const techLogos = [
   { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
   { node: <SiGooglesheets />, title: "Google Sheets", href: "https://www.google.com/sheets/about/" },
   { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
+  { node: <SiOdoo />,  title: "Odoo",  href: "https://www.odoo.com",
+},
 
     // 🎨 Design
   { node: <SiFigma />, title: "Figma", href: "https://www.figma.com" },
