@@ -10,7 +10,7 @@ import marketing from "./../../public/digital marketing.png";
 import dataanalyst from "./../../public/data analyst.png";
 import python from "./../../public/python.png";
 import { CometCard } from "@/components/comet-card";
-import SplitFlapText from '@/components//SplitFlapText';
+import SplitFlapText from '@/components/SplitFlapText';
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import { Button } from "@/components/moving-border";
 import { CardStack } from "@/components/card-stack";
@@ -36,7 +36,7 @@ function App() {
             textColor="#39fc03"
             tileRadius={8}
             gap={1}
-            fontSize={25}
+            fontSize={20}
             loop
             padTo={12} text={undefined}          />
         </div>
