@@ -60,7 +60,7 @@ const FloatingDockMobile = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             className="
-              absolute bottom-14 right-0
+              absolute top-14 right-0
               flex max-h-[70vh] flex-col-reverse items-end gap-2
               overflow-y-auto overflow-x-hidden
               rounded-full
