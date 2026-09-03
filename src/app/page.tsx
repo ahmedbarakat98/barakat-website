@@ -10,7 +10,7 @@ import marketing from "./../../public/digital marketing.png";
 import dataanalyst from "./../../public/data analyst.png";
 import python from "./../../public/python.png";
 import { CometCard } from "@/components/comet-card";
-import SplitFlapText from '@/components/SplitFlapText';
+import SplitFlapText from "@/components/SplitFlapText";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import { Button } from "@/components/moving-border";
 import { CardStack } from "@/components/card-stack";
@@ -26,7 +26,12 @@ function App() {
       <div className="w-full h-fit md:h-screen bg-white dark:bg-black relative flex justify-center items-center">
         <div className="absolute top-6 md:top-8 left-5  md:left-10 text-white">
           <SplitFlapText
-            words={[".Net Developer", "Frontend Developer", "IT Specialist", "GIS Developer"]}
+            words={[
+              ".Net Developer",
+              "Frontend Developer",
+              "IT Specialist",
+              "GIS Developer",
+            ]}
             flipDuration={0.13}
             stagger={0.06}
             cycleDelay={2400}
@@ -38,11 +43,11 @@ function App() {
             gap={1}
             fontSize={20}
             loop
-            padTo={12} text={undefined}          />
+            padTo={12}
+            text={undefined}
+          />
         </div>
-        <div className="absolute top-5 md:top-8 right-[50%] translate-x-[50%] text-white md:right-15 ">
-        
-        </div>
+        <div className="absolute top-5 md:top-8 right-[50%] translate-x-[50%] text-white md:right-15 "></div>
 
         {/* Hero  */}
         <div className="w-[80%] h-fit flex flex-col md:flex-row  pb-10 rounded-lg ">
@@ -158,90 +163,238 @@ function App() {
         </div>
       </div>
 
-      {/* About me  */}
-      <div id="about" className="w-full h-fit  bg-white dark:bg-black">
-        <div className="flex dark:text-white text-black justify-center flex-col items-center ">
-          <h1 className="text-4xl font-bold p-2 mt-15 md:mt-10 mb-10 ">
-            About Me
-          </h1>
-          <div className="flex flex-col ">
-            <div className="w-full pb-10 px-20 md:px-40 lg:px-60">
-              <p className="pb-5 dark:text-white text-center">
-                I Am a Motivated Junior Frontend Developer with a background in
-                GIS and over two years of experience at MaxAB Logistics,
-                specializing in GIS software including QGIS, ArcGIS, and SQL.
-                Recently completed a Frontend Development course at Route
-                Academy, where I gained hands-on experience in HTML, CSS,
-                JavaScript, and React. Eager to leverage my technical skills and
-                passion for web development, especially in interactive mapping
-                and data visualization, to contribute to a dynamic and
-                innovative team in the tech industry.
+
+      {/*  Video  */}
+      <div
+        id="about"
+        className="w-full h-fit bg-white dark:bg-black text-black dark:text-white"
+      >
+        <div className="flex flex-col items-center justify-center">
+          <div className="text-center mt-15 md:mt-10 mb-10 px-5">
+            <p className="text-sm tracking-[0.3em] uppercase text-[#39fc03] mb-3">
+              Get to know me
+            </p>
+
+            <h1 className="text-4xl md:text-5xl font-bold">About Me</h1>
+
+            <div className="w-16 h-[2px] bg-[#39fc03] mx-auto mt-5 shadow-[0_0_12px_#39fc03]" />
+          </div>
+
+          <div className="w-full px-6 md:px-20 lg:px-60 mb-14">
+            <p className="text-center leading-8 text-gray-600 dark:text-gray-300 max-w-5xl mx-auto">
+              I am a motivated Junior Frontend Developer with a background in
+              GIS and over two years of experience at MaxAB Logistics,
+              specializing in GIS software including QGIS, ArcGIS, and SQL.
+              Recently completed a Frontend Development course at Route Academy,
+              where I gained hands-on experience in HTML, CSS, JavaScript, and
+              React.
+            </p>
+
+            <p className="text-center leading-8 text-gray-600 dark:text-gray-300 max-w-5xl mx-auto mt-4">
+              I am passionate about building interactive web experiences,
+              especially applications that combine frontend development,
+              interactive mapping, and data visualization.
+            </p>
+          </div>
+
+          <div className="w-full px-5 md:px-10 lg:px-20 mb-20">
+            <div className="text-center mb-8">
+              <p className="text-[#39fc03] text-sm uppercase tracking-[0.35em] mb-3">
+                Beyond the CV
+              </p>
+
+              <h2 className="text-3xl md:text-4xl font-bold">My Journey</h2>
+
+              <p className="text-gray-500 dark:text-gray-400 mt-3">
+                From Geography & GIS to Frontend Development
               </p>
             </div>
-            <div className="w-3/4 mx-auto gap-5 md:gap-0 flex flex-col lg:flex-row justify-around items-center ">
-              <ElectricBorder
-                color="#39fc03"
-                speed={1}
-                chaos={0.5}
-                thickness={2}
-                style={{ borderRadius: 16 }}
+
+            {/* Video */}
+
+            <div className="max-w-5xl mx-auto">
+              <div
+                className="
+            relative
+            rounded-2xl
+            p-[2px]
+            bg-gradient-to-r
+            from-transparent
+            via-[#39fc03]
+            to-transparent
+            shadow-[0_0_35px_rgba(57,252,3,0.12)]
+          "
               >
-                <div className="p-5">
-                  <h2 className="flex items-center pb-3 gap-2 font-bold text-[20px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-6 text-[#39fc03]"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-                      />
-                    </svg>{" "}
-                    Helwan University{" "}
-                  </h2>
-                  <p className="text-[14px]">Faculty Of Arts</p>
-                  <p className="text-[14px]">Bachelor's Degree in Geography</p>
-                  <p className="text-[14px]">Grade : B (GPA 3.0/4.0) </p>
-                  <p className="text-[14px]">Cairo 2016- 2020</p>
+                <div
+                  className="
+              relative
+              overflow-hidden
+              rounded-2xl
+              bg-black
+              border
+              border-[#39fc03]/20
+            "
+                >
+                  <video
+                    className="
+                w-full
+                max-h-[700px]
+                object-contain
+                bg-black
+              "
+                    controls
+                    preload="metadata"
+                    // poster="/images/journey-poster.png"
+                  >
+                    <source src="/videos/my-journey.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+                  {/* Green Glow */}
+
+                  <div
+                    className="
+                pointer-events-none
+                absolute
+                inset-0
+                shadow-[inset_0_0_80px_rgba(57,252,3,0.08)]
+              "
+                  />
                 </div>
-              </ElectricBorder>
-              <ElectricBorder
-                color="#39fc03"
-                speed={1}
-                chaos={0.5}
-                thickness={2}
-                style={{ borderRadius: 16 }}
-              >
-                <div className="p-5">
-                  <h2 className="flex items-center pb-3 gap-2 font-bold text-[20px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-6 text-[#39fc03]"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"
-                      />
-                    </svg>
-                    Route Academy{" "}
-                  </h2>
-                  <p className="text-[14px]">Full Stack Development Diploma</p>
-                  <p className="text-[14px]">Frontend (React.js)</p>
-                  <p className="text-[14px]">Backend (.Net)</p>
-                  <p className="text-[14px]">Cairo 2025-present</p>
-                </div>
-              </ElectricBorder>
+              </div>
             </div>
+
+            {/* Video Description */}
+
+            <div className="text-center mt-6">
+              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-3xl mx-auto">
+                A short story about my career, the challenges I faced, and how I
+                moved from GIS into Frontend Development.
+              </p>
+
+              <div className="flex justify-center items-center gap-3 mt-4">
+                <span
+                  className="
+              w-2
+              h-2
+              rounded-full
+              bg-[#39fc03]
+              shadow-[0_0_10px_#39fc03]
+            "
+                />
+
+                <span className="text-xs uppercase tracking-[0.25em] text-gray-400">
+                  Watch my story
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* ================= EDUCATION ================= */}
+
+          <div className="w-full px-5 mb-5">
+            <div className="text-center mb-10">
+              <p className="text-[#39fc03] text-sm uppercase tracking-[0.35em] mb-3">
+                Education
+              </p>
+
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Academic Background
+              </h2>
+            </div>
+          </div>
+
+          {/* Education Cards */}
+
+          <div
+            className="
+        w-3/4
+        mx-auto
+        gap-5
+        md:gap-8
+        flex
+        flex-col
+        lg:flex-row
+        justify-around
+        items-center
+        px-5
+      "
+          >
+            {/* ================= HELWAN UNIVERSITY ================= */}
+
+            <ElectricBorder
+              color="#39fc03"
+              speed={1}
+              chaos={0.5}
+              thickness={2}
+              style={{ borderRadius: 16 }}
+            >
+              <div className="p-5 min-w-[280px]">
+                <h2 className="flex items-center pb-3 gap-2 font-bold text-[20px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-6 text-[#39fc03]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-.491-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                    />
+                  </svg>
+                  Helwan University
+                </h2>
+
+                <p className="text-[14px]">Faculty Of Arts</p>
+
+                <p className="text-[14px]">Bachelor's Degree in Geography</p>
+
+                <p className="text-[14px]">Grade: B (GPA 3.0/4.0)</p>
+
+                <p className="text-[14px]">Cairo 2016 - 2020</p>
+              </div>
+            </ElectricBorder>
+
+            {/* ================= ROUTE ACADEMY ================= */}
+
+            <ElectricBorder
+              color="#39fc03"
+              speed={1}
+              chaos={0.5}
+              thickness={2}
+              style={{ borderRadius: 16 }}
+            >
+              <div className="p-5 min-w-[280px]">
+                <h2 className="flex items-center pb-3 gap-2 font-bold text-[20px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-6 text-[#39fc03]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"
+                    />
+                  </svg>
+                  Route Academy
+                </h2>
+
+                <p className="text-[14px]">Full Stack Development Diploma</p>
+
+                <p className="text-[14px]">Frontend (React.js)</p>
+
+                <p className="text-[14px]">Backend (.Net)</p>
+
+                <p className="text-[14px]">Cairo 2025 - Present</p>
+              </div>
+            </ElectricBorder>
           </div>
         </div>
       </div>
